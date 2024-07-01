@@ -137,40 +137,5 @@ margin-right: 20px;
 color: #fff;
 text-decoration: none;
 }
-.result-container {
-display: none;
-position: relative;
-top: 150px; /* height of the navbar */
-width: 98%;
-height: 80px;
-background-color: whitesmoke;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-padding: 0 20px;
-margin-left: 20px;
-}
 
-.result {
-display: flex;
-width: 100%;
-height: 100%;
-justify-content: space-between; /* Add this line to add space between elements */
-align-items: center;
-padding: 0 20px;
-}
 
-.date_time {
-width: 100px;
-text-align: center;
-margin: 0 20px;
-}
-
-.airplane-id {
-width: 50px;
-margin-right: 20px;
-}
-
-.airline-name {
-
-margin-left: 20px; /* add left margin for the gap */
-}

@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Sign up</title>
-    <link rel="stylesheet" href="./login_style.css">
+    <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
     <div class="parent">
-        <div class="login-container">
+        <div class="signup-container">
             <div class="header">
                 <img src="./image/login_back_circle.png" alt="login image">
             </div>
-            <form id="loginForm" action="#">
+            <form id="signupForm" action="#">
+                <input type="text" id="name" placeholder="Name">
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <a href="./signup.html" id="signup-link">Sign up</a>
-                <button type="submit">Login</button>
+                <input type="password" id="confirm-password" placeholder="Confirm Password">
+                <input type="text" id="phone" placeholder="Phone Number">
+                <button type="submit">Sign up</button>
             </form>
         </div>
         <div class="navbar">

@@ -1,0 +1,79 @@
+
+.flight_half{
+    height: 100vh;
+    width: 50%;
+    grid-column: 1/span 1;
+    grid-row: 2/3;
+    background-image: url(./images/flight_select.jpeg);
+    background-size: 100% 100%;
+    
+    animation: Slider_flight 12s ease-out 3s 5;
+}
+.flight_half_blur{
+    height: 100%;
+    width:100%;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+
+}
+.flight_half_btn{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.flight_half_btn button{
+    opacity: 0;
+    border-radius: 50px;
+    background-color: transparent;
+    border-color: orangered;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.flight_half a{
+    color: orangered;
+    font-size: 24px;
+    background-color: transparent;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+
+.flight_half:hover>.flight_half_blur{
+    opacity: 1;
+}
+.flight_half:hover>.flight_half_blur>.flight_half_btn>button{
+    opacity: 1;
+    translate: (50%,-50%);
+}
+@keyframes Slider_flight {
+    0% {
+        /* transform: translateX(-50vw); */
+        background-image: url(./images/flight_select.jpeg);
+      }
+    
+    50% {
+        /* transform: translateX(0vw); */
+        background-image: url(./images/flight_select\(3\).jpeg);
+      }
+    100%{
+        background-image: url(./images/flight_select\(2\).jpeg);
+    }
+}
+@keyframes changetocloud {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
